@@ -11,8 +11,7 @@ st.title('Números da COVID-19 no Brasil')
 date_end = df['data'].iloc[-1].date()
 date_start = df['data'].iloc[0].date()
 
-date = st.date_input('Selecione a Data', date_end, date_start,
-                     date_end, help='Coloque a data que queira gerar o relatório.')
+date = st.date_input('Selecione a Data', date_end, date_start,date_end)
 
 # Codigos UF
 list_uf = [11, 12, 13, 14, 15, 16, 17, 21, 22, 23, 24, 25,
